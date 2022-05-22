@@ -8,3 +8,10 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 - Any live cell with more than three live neighbours dies (referred to as overpopulation or overcrowding).
 - Any live cell with two or three live neighbours lives, unchanged, to the next generation.
 - Any dead cell with exactly three live neighbours will come to life.
+
+## Terminology
+- Landscape - This represents the entire board of cells
+- Cell - This represents a singular cell within the Landscape
+- Step - A single evolution of the Landscape
+- Row - Collection of single cell Columns
+- Column - Collection of same-index columns in a Row
