@@ -7,7 +7,7 @@
   - [Functionality](#functionality)
   - [Live Site](#live-site)
   - [Developer](#developer)
-  - [YouTube Video Demononstration](#youtube-video-demononstration)
+  - [YouTube Video Demonstration](#youtube-video-demononstration)
   - [Contribution](#contribution)
   - [Attributions](#attributions)
 
@@ -18,7 +18,7 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 This is a 100% vanilla representation code challenge using Svelte and TypeScript.
 
 ## Rules
-- Any live cell with fewer than two live neighbours dies (referred to as underpopulation or exposure[1]).
+- Any live cell with fewer than two live neighbours dies (referred to as underpopulation or exposure).
 - Any live cell with more than three live neighbours dies (referred to as overpopulation or overcrowding).
 - Any live cell with two or three live neighbours lives, unchanged, to the next generation.
 - Any dead cell with exactly three live neighbours will come to life.
@@ -34,7 +34,7 @@ This is a 100% vanilla representation code challenge using Svelte and TypeScript
 ## Functionality
 > Cells are able to be toggled or randomized for your initial conditions  
 > The game is a 0 player game, and will propagate by itself, based on the initial state  
-> You can reset the board and try again at any time by selecting *Randomize*  
+> You can reset the board and try again at any time by selecting *Reset*  
 > Press Start or Stop to control evolution
 
 ## Live Site
@@ -50,7 +50,7 @@ npm i
 npm run dev
 ```
 
-## YouTube Video Demononstration
+## YouTube Video Demonstration
 - To Be Created - Here is a link to the [Tech Debt channel](https://www.youtube.com/channel/UC8dWTP7lkv56_tI5VwXQtEg)
 
 ## Contribution
