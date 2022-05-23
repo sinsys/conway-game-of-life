@@ -17,6 +17,7 @@
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
+			background: #131313;
 		}
 	}
 </style>
