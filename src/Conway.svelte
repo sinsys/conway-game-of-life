@@ -4,7 +4,7 @@
   [X] User input (setup initial Landscape)
   [X] Toggle cell (boolean) on Landscape
 
-  [ ] Assert surrounding cells
+  [X] Assert surrounding cells
   [ ] Assert grid and layout next step
 
   [ ] Begin/end sequence (pause/play)

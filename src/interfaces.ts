@@ -7,3 +7,7 @@ export interface Cell {
 export type Row = Array<Cell>
 // Represents natural Landscape (square)
 export type Landscape = Array<Row>
+
+export type CellSwitchMap = Array<
+  Array<boolean>
+>
