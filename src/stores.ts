@@ -7,7 +7,7 @@ import type { Cell, Row, Landscape, ConwayConfig } from './interfaces'
 
 // Initial values for core config
 const baseConfig = {
-  gridSize: 40,
+  gridSize: 15,
   evolutionDuration: 100,
   aliveRatio: 0.3
 }
@@ -21,7 +21,7 @@ export const createLandscape = (config: ConwayConfig): Landscape => {
   const landscape = Array(config.gridSize).fill(row)
   const randomizedLandscape: Landscape = landscape.map((row: Row, rowNum: number) =>
     row.map((_cell: Cell, columnNum: number) => ({
-      alive: Math.random() < 0.3,
+      alive: Math.random() < config.aliveRatio,
       columnNum: columnNum,
       rowNum: rowNum
     })
