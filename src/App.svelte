@@ -1,3 +1,4 @@
+<!-- Root level entry point for Conway's Game of Life -->
 <script lang="ts">
 	import Conway from './Conway.svelte'
 </script>

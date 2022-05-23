@@ -1,40 +1,37 @@
+<!-- Single Cell in Landscape -->
 <script lang="ts">
-  import type { Cell, Landscape } from './interfaces'
-  import { landscape, toggleCell, setNextLandscapeStep, assertNextCellStep } from './stores'
+  import type { Cell } from './interfaces'
+  import { toggleCell } from './stores'
   export let cell: Cell
-  let landscapeState: Landscape
-  landscape.subscribe(value => landscapeState = value)
 </script>
 
 <span
   class="cell
     {cell.alive ? 'alive' : 'dead'}"
-  on:click={ (_event) => {
-    toggleCell(cell)
-    setNextLandscapeStep()
-  } }
->
-  {cell.alive ? 'O' : 'X' }
-</span>
+  on:click={ (_event) => toggleCell(cell) }
+></span>
 
 <style>
   .cell {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     background: #CCC;
     display: inline-block;
-    margin: -0.125rem 0.125rem;
     font-size: 1rem;
     line-height: 1rem;
     color: #FEFEFE;
     cursor: pointer;
-    user-select: none; /* Non-prefixed version, currently
-                          supported by Chrome, Edge, Opera and Firefox */
+    user-select: none;
+    border-radius: 1rem;
+    transition: background 0.2s ease-in-out;
   }
   .alive {
-    background: #DDD;
+    background: #77DD77;
   }
   .dead {
-    background: #999;
+    background: #666;
+  }
+  .cell:hover {
+    background: #CCC;
   }
 </style>
