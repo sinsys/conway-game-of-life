@@ -7,7 +7,7 @@
   - [Functionality](#functionality)
   - [Live Site](#live-site)
   - [Developer](#developer)
-  - [YouTube Video Demononstration](#youtube-video-demononstration)
+  - [YouTube Video Demonstration](#youtube-video-demononstration)
   - [Contribution](#contribution)
   - [Attributions](#attributions)
 
@@ -50,7 +50,7 @@ npm i
 npm run dev
 ```
 
-## YouTube Video Demononstration
+## YouTube Video Demonstration
 - To Be Created - Here is a link to the [Tech Debt channel](https://www.youtube.com/channel/UC8dWTP7lkv56_tI5VwXQtEg)
 
 ## Contribution
