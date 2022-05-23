@@ -15,3 +15,8 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 - Step - A single evolution of the Landscape
 - Row - Collection of single cell Columns
 - Column - Collection of same-index columns in a Row
+
+## Functionality
+> Cells are able to be toggled or randomized for your initial conditions
+> The game is a 0 player game, and will propagate by itself, based on the initial state
+> You can reset the board and try again at any time <TODO>
