@@ -28,7 +28,7 @@
   const startPropagation = () => {
     propagate = setInterval(() => {
       setNextLandscapeStep()
-    }, config.evolutionDuration)
+    }, evolutionDuration)
   }
 
   // Stop evolution
@@ -40,7 +40,7 @@
     landscape.update(ls => createLandscape(config))
   }
 
-  // Applies custom configuration
+  // Applies custom configuration & resets
   const applyConfig = () => {
     conwayConfig.update(cfg => {
       cfg = {
@@ -50,6 +50,7 @@
       }
       return cfg
     })
+    randomize()
   }
 
   // Cleanup on component destruction
@@ -102,10 +103,7 @@
     </div>
   </div>
   <button on:click={applyConfig}>
-    Apply custom config
-  </button>
-  <button on:click={randomize}>
-    Reset
+    Apply Config & Reset
   </button>
 </div>
 
@@ -113,6 +111,13 @@
   #controls {
     display: flex;
     justify-content: center;
+  }
+  #controls button {
+    font-size: 1.5rem;
+  }
+  #landscape {
+    display: flex;
+    flex-direction: column;
   }
   .row {
     margin: 0;
@@ -123,10 +128,12 @@
     margin: 0.5rem 1rem;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
+    display: inline-block;
   }
   #config {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   label {
     margin: 0.25rem 1rem;
@@ -134,5 +141,6 @@
   }
   input {
     margin: 0.25rem;
+    text-align: center;
   }
 </style>
