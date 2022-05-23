@@ -18,7 +18,7 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 This is a 100% vanilla representation code challenge using Svelte and TypeScript.
 
 ## Rules
-- Any live cell with fewer than two live neighbours dies (referred to as underpopulation or exposure[1]).
+- Any live cell with fewer than two live neighbours dies (referred to as underpopulation or exposure).
 - Any live cell with more than three live neighbours dies (referred to as overpopulation or overcrowding).
 - Any live cell with two or three live neighbours lives, unchanged, to the next generation.
 - Any dead cell with exactly three live neighbours will come to life.
